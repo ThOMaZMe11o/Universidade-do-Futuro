@@ -16,4 +16,28 @@ body {
     background: linear-gradient(20deg, rgb(45, 45, 45), rgb(34, 1, 90));
 }
 
+@media (max-width: 622px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #pages {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 596px) {
+    #tittle h1 {
+        font-size: 40px;
+    }
+}
 
