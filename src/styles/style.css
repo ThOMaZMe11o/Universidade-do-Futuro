@@ -13,7 +13,51 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(20deg, rgb(45, 45, 45), rgb(34, 1, 90));
+    background: rgb(34, 1, 90);
     background-size: 100vw;
 }
 
+
+@media (max-width: 622px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #pages {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #container {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 528px) {
+
+    #container2 {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 475px) {
+    #container h1 {
+        font-size: 20px;
+    }
+
+    #container h3 {
+        font-size: 18px;
+    }
+
+    #container p, ol {
+        font-size: 14px;
+    }
+}

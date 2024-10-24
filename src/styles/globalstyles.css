@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(20deg, rgb(45, 45, 45), rgb(34, 1, 90));
+    background: rgb(34, 1, 90);
 }
 
 @media (max-width: 622px) {
@@ -36,8 +36,61 @@ body {
 }
 
 @media (max-width: 596px) {
+
     #tittle h1 {
         font-size: 40px;
     }
+
+    footer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
+@media (max-width: 1118px) {
+    #card {
+        margin: 4px;
+    }
+}
+
+@media (max-width: 887px) {
+    #card h2 {
+        font-size: 12px;
+    }
+
+    #card h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 818px) {
+    #cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 932px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    #image {
+        width: 0;
+    }
+}
