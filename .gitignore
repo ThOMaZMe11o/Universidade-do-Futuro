@@ -1,0 +1,33 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Dependências do sistema
+*.egg-info/
+*.egg
+
+# Arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de logs
+*.log
+
+# Arquivos de banco de dados
+*.sqlite3
+
+# Arquivos gerados por ferramentas de packaging
+dist/
+build/

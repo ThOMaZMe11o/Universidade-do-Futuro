@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/globalstyles.css')}}"/>
+    <link rel="icon" href="{{ url_for('static', filename='assets/icons/foguete.png')}}">
+    <title>Universidade do Futuro</title>
+</head>
+<body>
+    <nav class="w-full h-8 py-10 px-4 flex justify-between items-center">
+        <div class="flex justify-center items-center">
+            <img src="{{ url_for('static', filename='assets/icons/foguete.png')}}" alt="logo" class="w-10">
+            <h1 class="text-white text-2xl font-bold ml-3">Universidade do Futuro</h1>
+        </div>
+        <div class="flex justify-center items-center" id="pages">
+            <a href="" class="text-white text-md font-regular ml-6 rounded-md hover:bg-">Welcome</a>
+            <a href="{{ url_for('contact')}}" class="text-white text-md font-regular ml-6 rounded-md">Contato</a>
+            <a href="{{ url_for('home')}}"><button class="bg-blue-600 text-white text-md font-medium px-6 py-3 ml-5 rounded-md hover:bg-blue-700 shadow-lg">Entrar</button></a>
+        </div>
+    </nav>
+    
+    <div class="w-full h-5/6 flex justify-center items-center">
+        <div class="text-center px-4" id="tittle">
+            <h1 class="text-white text-5xl font-bold">A sua universidade dos sonhos está perto de você, <br> venha conhecer sobre técnologias do futuro. </h1>
+            <h4 class="text-blue-500 text-lg font-regular mt-2">Universidade do Futuro: Aprendizado Inovador para um Mundo em Transformação. </h4>
+            <a href="{{ url_for('home')}}"><button class="bg-blue-600 text-white text-lg font-medium px-16 py-4 mt-10 rounded-lg hover:bg-blue-700 shadow-lg">Ver mais</button></a>
+        </div>
+    </div>
+
+    <footer class="flex justify-center items-center">
+        <h1 class="text-white">@2024 | Universidade do Futuro | Thomaz Feitosa De Mello</h1>
+    </footer>
+</body>
+</html>
